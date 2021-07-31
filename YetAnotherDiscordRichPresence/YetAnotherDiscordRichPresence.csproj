@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SocketPath\" />
+    <None Remove="DiscordSocket\" />
+    <None Remove="DiscordSocketIO\" />
+    <None Remove="Serialization \" />
+    <None Remove="Payload\" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Client\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DiscordSocketPath\" />
+    <Folder Include="DiscordSocket\" />
+    <Folder Include="DiscordSocketIO\" />
+    <Folder Include="Serialization \" />
+    <Folder Include="DiscordRequest\" />
+    <Folder Include="Payload\" />
+    <Folder Include="Client\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+</Project>
